@@ -1,0 +1,27 @@
+options:
+  width: 600
+  height: 500
+  legend: 
+    hide: false
+    position: 
+      right: 40
+  padding: {bottom: 70, left: 70, right: 10, top: 10}
+  axis:
+    y:
+      interval: 10
+      padding: 10
+    x:
+      ticks:
+      {% for idx, line in enumerate(o.lines) %}
+        - v: $idx
+          label: $line.item.name
+      {% end %}
+chart:
+  type: line
+  output_type: png
+  dataset:
+    - - Sales
+      -
+      {% for idx, line in enumerate(o.lines) %}
+        - [$idx, $line.amount]
+      {% end %}

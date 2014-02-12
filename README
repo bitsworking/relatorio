@@ -1,0 +1,20 @@
+Relatorio
+=========
+
+Relatorio is a templating library which provides a way to easily output several
+kinds of files (odt, ods, png, svg, ...). Support for more filetypes can
+be easily added by creating plugins for them.
+
+Relatorio also provides a report repository allowing you to link python objects
+and report together, find reports by mimetype/name/python object.
+
+Note on PyCha
+=============
+
+Since the 0.4.0 release, pycha upstream author included most of our patches. So
+it is not necessary anymore to use our friendly fork of the project.
+
+For SVG support, you need PyCha 0.4.2 or later.
+
+    http://www.lorenzogil.com/projects/pycha/
+

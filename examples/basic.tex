@@ -1,0 +1,21 @@
+\enableregime [utf-8]
+\mainlanguage [fr]
+
+\starttext
+
+Dear $o.customer.name,
+
+Here is the list of your purchases:
+
+\starttable[|l|l|l|l|l|]
+\HL
+\NC Name \VL Reference \VL Quantity \VL Unit Price \VL Amount \SR
+\HL
+{% for line in o.lines%} \
+\NC $line.item.name \VL $line.item.reference \VL $line.quantity
+\VL $line.item.price \VL $line.amount \SR
+\HL \
+{% end %}
+\stoptable
+
+\stoptext

@@ -1,0 +1,80 @@
+0.6.0 - 20130810
+ * Add support for Python 3
+ * Allow to pass only source to Template
+
+0.5.7 - 20130126
+ * Allow string as bitstream for images
+
+0.5.6 - 20120223
+ * Add expression cache to prevent multiple evaluation of the same expression
+ * Fix typo when writing manifest
+ * Remove Thumbnails in opendocument
+ * Clean meta in opendocument
+ * Clean template code from draw:frame in opendocument
+ * Use StringIO as failback of cStringIO
+
+0.5.5 - 20100719
+ * Fix namespace in opendocument manifest
+
+0.5.4 - 20100330
+ * Update manifest.xml with added files in opendocument
+ * Do not write empty width or height attributes in opendocument
+ * Update py:attrs attributes in opendocument
+
+0.5.3 - 20100110
+ * Escape elements values in opendocument template
+
+0.5.2 - 20091108
+ * Fix guess_type for long value
+ * Add width, height arguments for "image:" in odf
+ * Switch to GPL-3
+ * Added support for Genshi {% include %} tags (patch by Simon Jagoe)
+ * Nicer traceback message upon failed import
+
+0.5.1 - 20090416
+ * Simplified the examples
+ * Fix usage of tags without attributes (choose & otherwise)
+ * Print original traceback when a module can not be loaded
+ * Do not import relatorio in setup.py
+ * Better handling of namespaces
+ * Added some tests
+
+0.5.0 - 20090123
+ * Added Text and XML Template to the TemplateLoader
+ * Splitted mimetypes and ids in the ReportRepository
+ * RelatorioStream now has a __str__ method
+ * OOTemplate: ChartTemplate can be included
+ * OOTemplate: Correctly handle content type in the table cells
+ * OOTemplate: Better closing/opening tag detection algorithm
+ * OOTemplate: Looping on columns now work in OOTemplates
+ * OOTemplate: Using compression
+
+0.4.1 - 20081110
+ * Support for upstream PyCha since the most annoying bug has been fixed
+ * Removed the entrypoint stuff that was confusing lot of users
+
+0.4.0 - 20080910
+ * Generation of png/svg files through PyCha
+ * Code cleaning
+ * Signature of report __call__ method mimics the one of genshi templates
+ * Added the possibility to call chart report from odf ones
+
+0.3.0 - 20080806
+ * Generation of pdf files through ConTeXt
+ * Better support of cell value in opendocument table cells
+ * Better namespace support in opendocument files
+ * Better image support in opendocument files
+
+0.2.0 - 20080717
+ * Added support for templating in the styles.xml file
+ * Much more genshi-esque way to do stuff in the odt templating
+
+0.1.1 - 20080715
+ * Added an image handling feature (thanks to b2ck.com for the idea and bits of
+   implementation)
+ * Added the dependancy on Genshi
+ * test for trml2pdf presence
+ * standardize the way the template object returns their results
+
+0.1.0 - 20080707
+Initial version

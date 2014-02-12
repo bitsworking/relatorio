@@ -25,7 +25,7 @@ try:
 except ImportError:
     from StringIO import StringIO
 
-plugins = ['base', 'opendocument', 'pdf', 'chart']
+plugins = ['base', 'opendocument'] #, 'pdf', 'chart']  # Exclude of cairo dependency
 
 for name in plugins:
     try:
